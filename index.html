@@ -78,7 +78,14 @@
             section {
                 display: inline-block;
                 max-width: 100%;
-                height: 300%;
+                height: auto;
+            }
+        }
+        @media screen and (max-widht: 480px){
+            .container {
+                display: inline-block;
+                max-width: 100%;
+                height: 200vh;
             }
         }
         .MyMarketingPortfolio .section:nth-child(1){
@@ -210,7 +217,7 @@
         </nav>
         <div class="MyMarketingPortfolio">
             <section id="dataviz" class="section">
-                <div class="column1">     
+                <div class="container">     
                     <h1 class="text1">Data Visualization</h1>
                         <br></br>
                             <img class="right-align", src="images/Data Viz NYC.png">
