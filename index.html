@@ -20,13 +20,8 @@
             margin: 0;
             padding: 0;
         }
-        body {font-family: 'Lato', sans-serif;
+        body {font-family: Arial, Helvetica, sans-serif;
         height: 100%;}
-        @media screen and (max-widht: 480px){
-            body {
-                height: auto;
-            }
-        }
         /* Edit Navbar settings & style here*/
         .navbar {
             position: fixed;
@@ -39,7 +34,6 @@
             z-index: +1;
         }
         .navbar a{
-            font-family: Arial, Helvetica, sans-serif;
             font-size: 15px;
             padding: 15px 0;
             color: white;
@@ -47,19 +41,16 @@
             font-weight: 700;
             text-decoration: none;
         }
-        @media screen and (max-width: 480px){
-            .navbar a{
-                font-size: 8px;
-            }  
-        }
         /* Edit Image settings & style here */
         img {
-            max-width: 100%;
-            max-height: 100%;
-            margin-top: 10px;
+            max-width: 75%;
+            max-height: 90%;
+            display: block;
+            align-items: center;
             margin-left: auto;
             margin-right: auto;
-            height: 95vh;
+            margin-top: 20px;
+            height: 75vh;
         }
         @media screen and (max-width: 480px){
             img {
@@ -67,120 +58,37 @@
                 height: auto;
             }
         }
-        .right-align {
-            float: right;
-        }
-        .left-align {
-            float: left;
-        }
         /* Edit Section settings & style here */
         section {
             display: inline-block;
             width: 100%;
-            height: 100vh;
-        }
-        @media screen and (max-widht: 480px){
-            section {
-                display: inline-block;
-                max-width: 100%;
-                max-height: 200%;
-            }
+            height: 85vh;
         }
         .MyMarketingPortfolio .section:nth-child(1){
             background-color: black;
         }
         .MyMarketingPortfolio .section:nth-child(2){
-            background-color: #E3D7F4;
+            background-color: black;
         }
         .MyMarketingPortfolio .section:nth-child(3){
             background-color: black;
         }
         .MyMarketingPortfolio .section:nth-child(4){
             background-color: black;
-        
         }
         .MyMarketingPortfolio .section:nth-child(5){
-            background-color: #DED4FA;
+            background-color: black;
         }
         .MyMarketingPortfolio .section:nth-child(6){
             background-color: black;
         }
         .MyMarketingPortfolio .section:nth-child(7){
-            background-color: #DED4FA;
+            background-color: black;
         }
-        /*Edit Text Blocks h1, h2, h3, p*/
-        h1 { 
-            color: white;
-            font-weight: bold;
-            font-size: 60px;
-            float: left;
-            margin-top: 10vh; 
-            margin-left: 10vh;}
-        @media screen and (max-width: 480px){
-            h1 {
-                font-size: 40px;
-                margin-left: 5vh;
-            }  
+        .MyMarketingPortfolio .section:nth-child(8){
+            background-color: black;
         }
-        .text1 {
-            max-width: 25%;
-        }
-        .text2 {
-            max-width: 35%;
-        }
-        @media screen and (max-width: 480px){
-            .text2 {
-                max-width: 70%;
-            }
-        }
-        @media screen and (max-width: 480px){
-            .text1 {
-                max-width: 70%;
-            }
-        }
-        h3 {
-            color: black;
-            font-size: 11px;
-            font-family: 'Lato', sans-serif;
-            line-height: 3vh;
-            margin-left: 10vh;
-            max-width: 25%;
-        }
-        p {
-            color: #DED4FA;
-            margin-top: 200px;
-            margin-left: 80px;
-            max-width: 35%;
-            font-size: 14px;
-        }
-        .babyblue {
-            color: #BDF8FF;
-        }
-        @media screen and (max-width: 480px){
-            p {
-                max-width: 80%;
-                margin-top: 20vh;
-                margin-left: 5vh;
-            }  
-        }
-        ul {
-            color: #DED4FA;
-            margin-top: 200px;
-            margin-left: 80px;
-            max-width: 25%;
-            font-size: 14px;
-        }
-        @media screen and (max-width: 480px){
-            ul {
-                max-width: 80%;
-                margin-top: 5vh;
-                margin-left: 5vh;
-            }  
-        }
-        .textlist {
-            list-style: none;
-        }
-        /* Edit Footer settings & style here */
+        h1 { color: black; }
         footer {
             background-color: #E3D7F4;
             font-family: 'Lato', sans-serif;
@@ -189,25 +97,18 @@
         .footertext {
             font-weight: bolder;
             font-size: small;
-            margin-top: 30px;
-            margin-left: 60px;
+            margin-left: 100px;
             margin-bottom: 40px;
             color: white;
         }
         li .fa {
             list-style: none;
             text-decoration: none;
-            margin-left: 60px;
+            margin-left: 100px;
             color: white;
         }
         .socialicons {
             margin-top: -20px;
-        }
-        @media screen and (max-width: 480px){
-            footer {
-                max-width: 100%;
-                height: auto;
-            }  
         }
         </style>
     </head>
@@ -217,60 +118,20 @@
             <a href="#marketing">Marketing</a>
             <a href="#socialmedia">Social</a>
             <a href="#socialmedia2">Social(2)</a>
+            <a href="#socialmedia3">Social(3)</a>
             <a href="#seo">SEO</a>
             <a href="#seo2">SEO(2)</a>
             <a href="#seo3">SEO(3)</a>
         </nav>
         <div class="MyMarketingPortfolio">
-            <section id="dataviz" class="section">
-                <div class="column1">     
-                    <h1 class="text1">Data Visualization</h1>
-                        <br></br>
-                            <img class="right-align", src="images/Data Viz NYC.png">
-                <br></br>
-                </div>
-            </section>
-            <section id="marketing" class="section">
-                    <div class="column1">
-                        <h1 class="text2">Branding, Digital Marketing & Analytics </h1>
-                            <br></br>
-                                <img class="right-align", src="images/Portfolio x GitHub-2.png">
-                            <br></br>
-                    </div>
-            </section>
-            <section id="socialmedia" class="section">
-                <div class="column1"> 
-                    <h1 class="text2">Social Media & Branding Strategy</h1>
-                        <br></br>
-                            <img class="right-align", src="images/Portfolio x GitHub-3.png">
-                                <br></br>
-                        <p class="babyblue">"Bright Ideas Gone Agile" was published to officially open the new website, launched simultaneously as the brand new Instagram account I started for Agile Lab. By landing the start-up on Instagram, my goal was to give a voice to the team that made the company what it is, and attract new talent in Big Data. I developed a social media content strategy focused on employer branding, including a short IGTV series of interviews in vlog format that looked into the experiences of our team. We covered topics such as the most rewarding project they worked on, the reason for choosing Agile Lab for their personal and professional growth as new grads, and the benefits of working in an environment that constantly incentivizes its team to take up new challenges. <br></br>As I launched agilelab_official and developed the social media strategy from scratch, I saw the account go from having no content nor metrics to reaching an average of +36% new accounts per month. Specifically, I reached on average 55% of non-following accounts per post - hitting the peak of 82% impressions from non-followers with my most successful post. To increase reach and engagement on a steady basis, I created a dashboard on Tableau to identify potential trends and visualize any data correlations among my posts</p>
-                    <br></br>
-                </div>
-            </section>
-            <section id="socialmedia2" class="section">
-                <div class="column1"> 
-                    <h1>hjjhj</h1>
-                            <img class="left-align", src="images/Portfolio x GitHub-4.png">  
-                </div>
-            <section id="seo" class="section">
-                <div class="column1"> 
-                    <h1 class="text2">Back Market | SEO Italy</h1>
-                        <br></br>
-                            <img class="right-align", src="images/Portfolio x GitHub-5.png">
-                </div>
-            </section>
-            <section id="seo2" class="section">
-                <div class="column1"> 
-                    <h1>bjhjb</h1>
-                        <br></br>
-                            <img class="left-align", src="images/Portfolio x GitHub-6.png">   
-                </div>
-            </section>
-            <section id="seo3" class="section">
-                <h1>bjhjb</h1>
-                    <img src="images/Portfolio x GitHub-7.png">
-            </section>
+            <section id="dataviz" class="section"><h1>ref1</h1><img src="images/Portfolio x Github.png"></section>
+            <section id="marketing" class="section"><h1>ref2</h1><img src="images/Portfolio x Github-2.png"></section>
+            <section id="socialmedia" class="section"><h1>ref3</h1><img src="images/Portfolio x Github-3.png"></section>
+            <section id="socialmedia2" class="section"><h1>ref4</h1><img src="images/Portfolio x Github-4.png"></section>
+            <section id="socialmedia3" class="section"><h1>ref5</h1><img src="images/Portfolio x Github-5.png"></section>
+            <section id="seo" class="section"><h1>ref6</h1><img src="images/Portfolio x Github-6.png"></section>
+            <section id="seo2" class="section"><h1>ref7</h1><img src="images/Portfolio x Github-7.png"></section>
+            <section id="seo3" class="section"><h1>ref8</h1><img src="images/Portfolio x Github-8.png"></section>
         </div>
         <footer>
             <br></br>
@@ -278,6 +139,13 @@
                 <p class="footertext">
                     Designed and coded by Camilla Scandola
                 </p>
+            </div>
+            <div class="socialicons">
+                <ul>
+                    <li>
+                        <a href="https://LinkedIn.com/in/camilla-scandola" class="fa fa-linkedin"></a>
+                    </li>
+                </ul>
             </div>
         </footer>
         <!-- Jquery CDN Link-->
@@ -291,5 +159,5 @@
             });
                 });
         </script>
-        </body>
+    </body>
     </html>
