@@ -96,7 +96,35 @@
         .MyMarketingPortfolio .section:nth-child(8){
             background-color: black;
         }
-        h1 { color: black; }
+        /*Edit Text Blocks h1, h2, h3, p*/
+        h1 { 
+            color: white;
+            font-weight: bold;
+            font-size: 60px;
+            float: left;
+            margin-top: 10vh; 
+            margin-left: 10vh;}
+        @media screen and (max-width: 480px){
+            h1 {
+                font-size: 40px;
+                margin-left: 5vh;
+            }  
+        }
+        .text1 {
+            max-width: 25%;
+        }
+        .text2 {
+            max-width: 35%;
+        }
+        @media screen and (max-width: 480px){
+            .text2 {
+                max-width: 70%;
+            }
+        }
+        @media screen and (max-width: 480px){
+            .text1 {
+                max-width: 70%;
+            }
         footer {
             background-color: #E3D7F4;
             font-family: 'Lato', sans-serif;
@@ -137,11 +165,11 @@
                     <img class="right-align"; src="images/Data Viz NYC.png">
             </section>
             <section id="marketing" class="section">
-                <h1>ref2</h1>
+                <h1 class="text2">ref2</h1>
                     <img class="right-align"; src="images/Portfolio x GitHub-2.png">
             </section>
             <section id="socialmedia" class="section">
-                <h1>ref3</h1>
+                <h1 class="text2">ref3</h1>
                     <img class="right-align"; src="images/Portfolio x GitHub-3.png">
             </section>
             <section id="socialmedia2" class="section"><h1>ref4</h1><img src="images/Portfolio x GitHub-4.png"></section>
