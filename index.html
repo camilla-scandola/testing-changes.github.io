@@ -20,8 +20,9 @@
             margin: 0;
             padding: 0;
         }
-        body {font-family: 'Lato', sans-serif;
-        height: 100%;}
+        body {
+            font-family: 'Lato', sans-serif;
+            height: 100%;}
         /* Edit Navbar settings & style here*/
         .navbar {
             position: fixed;
@@ -46,6 +47,48 @@
             .navbar a{
                 font-size: 10px;
             }  
+        }
+        /* Edit Dropdown settings & style here*/
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: white;
+            opacity: 0.99;
+            font-weight: 700;
+            text-decoration: none;
+            background-color: #DFADC8;
+            border: none;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            color: white;
+            background-color: #DFADC8;
+            opacity: 75%;
+            width: 200px;
+            z-index: +1;
+        }
+        .a-dropdown {
+            margin-left: 15px;
+            color: white;
+            float: none;
+            text-align: left;
+        }
+
+        .dropdown-button:hover {
+            display: block;
+            background-color: white;
+            opacity: 45%;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            padding: 15px 0;
+            height: 45px;
         }
         /* Edit Image settings & style here */
         img {
@@ -284,14 +327,25 @@
         </style>
     </head>
     <body>
-        <nav class="navbar">
-            <a href="#dataviz">Data Viz</a>
-            <a href="#marketing">Marketing</a>
-            <a href="#socialmedia">Social</a>
-            <a href="#seo">SEO</a>
-            <a href="#seo2">SEO(2)</a>
-            <a href="#seo3">SEO(3)</a>
-        </nav>
+        <div>
+            <nav class="navbar">
+                <div class="dropdown">
+                    <button class="dropdown-button">Personal <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content">
+                                <a class="a-dropdown" href="#Intro">Intro</a>
+                                <a class="a-dropdown" href="#Paris">Paris</a>
+                            </div>
+                        </div>
+                    <a href="#dataviz">Data Viz</a>
+                    <a href="#marketing">Marketing</a>
+                    <a href="#socialmedia">Social</a>
+                    <a href="#seo">SEO</a>
+                    <a href="#seo2">SEO(2)</a>
+                    <a href="#seo3">SEO(3)</a>
+                </nav>
+            </div>
+        </div>
         <div class="MyMarketingPortfolio">
             <section id="dataviz" class="section">
                 <div class="column1">     
