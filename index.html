@@ -83,6 +83,9 @@
         <form action="/result_function1" method="post">
             <h4>1) This function checks whether a syllable exists in the Hiragana dictionary</h4>
             <p>The input string should be a syllable that combines a consonant and a vowel - or solely a vowel.</p>
+            <p>*There is one exception in the Hiragana alphabet - the "n" character is the only consonant which can <b>also</b> be an independent, non-syllabic character</p>
+
+            <p>*Note that some syllables are phonetically adapted when transcribed into Latin letters - for example, “tu” is actually “tsu”, “ti” would be “chi” and “si” would be “chi”</p>
             <label for="function1Input">Type your syllable:</label>
             <input type="text" id="function1Input" name="function1Input" class="form-control" required>
             <button type="submit" class="btn btn-primary mt-2"></button>
