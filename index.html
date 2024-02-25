@@ -75,17 +75,19 @@
     <div class="container mt-5">
         <h1><b>Hiragana Word Game</b></h1><br></br>
 
-        <p>こんにちは! This is a word game built in Python and based on the Japanese alphabet of Hiragana. In a nutshell, Hiragana is an alphabet based on syllables - it combines vowels with consonants, where consonants are paired with each vowel, and each set corresponds to a specific symbol. For example, <i>word game</i> (kotoba asobi) would be 言葉遊び, but it could also be broken down into individual syllables and written as ことばあそび. Note how the last symbol is the same in both formats. That’s because in Japanese, a lot of words and expressions are actually a mix of Kanji and Hiragana. In the following <i>kotoba asobi</i>, I have created a dictionary of two-syllable words and their corresponding Hiragana translation. For example, haru = はる 🌸 (spring)
+        <p>こんにちは! This is a word game built in Python, on the Japanese alphabet of Hiragana. In a nutshell, Hiragana is an alphabet based on syllables - it combines vowels with consonants, where consonants are paired with each vowel, and each set corresponds to a specific symbol. For example, <i>word game</i> (kotoba asobi) would be 言葉遊び, but it could also be broken down into individual syllables and written as ことばあそび. Note how the last symbol is the same in both formats. That’s because in Japanese, a lot of words and expressions are actually a mix of Kanji and Hiragana.
 
-            This word game includes five different functions:</p>
+            In the following word game, I have created a dictionary of two-syllable words in Japanese, their corresponding Hiragana version and translation in English. For example, haru = はる 🌸 (spring)</p>
+
+            <p>This word game includes five different functions, and it helps you figure these words out on your own:</p>
         
         <!-- Form for Function 1 -->
         <form action="/result_function1" method="post">
             <h4>1) This function checks whether a syllable exists in the Hiragana dictionary</h4>
-            <p>The input string should be a syllable that combines a consonant and a vowel - or solely a vowel.</p>
+            <p>The input string should be a syllable that combines a consonant with a vowel - or be solely a vowel.</p>
             <p>*There is one exception in the Hiragana alphabet - the "n" character is the only consonant which can <str><i>also</i></str> be an independent, non-syllabic character</p>
 
-            <p>*Note that some syllables are phonetically adapted when transcribed into Latin letters - for example, “tu” is actually “tsu”, “ti” would be “chi” and “si” would be “chi”</p>
+            <p>*Note that some syllables are phonetically adapted when transcribed into Latin letters - for example, “tu” is actually “tsu”, “ti” would be “chi” and “si” would be “shi”</p>
             <label for="function1Input">Type your syllable:</label>
             <input type="text" id="function1Input" name="function1Input" class="form-control" required>
             <button type="submit" class="btn btn-primary mt-2"></button>
@@ -96,7 +98,7 @@
         <!-- Form for Function 2 -->
         <form action="/result_function2" method="post">
             <h4>2) This function checks whether a word exists in Japanese</h4>
-            <p>The input string should be a combination of two existing syllables</p>
+            <p>The input string should be a combination of two existing syllables (in Latin letetrs)</p>
             <label for="function2Input">Type your word:</label>
             <input type="text" id="function2Input" name="function2Input" class="form-control" required>
             <button type="submit" class="btn btn-primary mt-2"></button>
@@ -107,7 +109,7 @@
         <!-- Form for Function 3 -->
         <form action="/result_function3" method="post">
             <h4>3) This function returns the Hiragana version of your word</h4>
-            <p>The input string should be an existing two-syllable word in Japanese</p>
+            <p>The input string should be an existing two-syllable Japanese word (in Latin letetrs)</p>
             <label for="function3Input">Copy paste your word:</label>
             <input type="text" id="function3Input" name="function3Input" class="form-control" required>
             <button type="submit" class="btn btn-primary mt-2"></button>
